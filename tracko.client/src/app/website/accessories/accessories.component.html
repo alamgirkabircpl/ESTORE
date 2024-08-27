@@ -1,3 +1,26 @@
+<section class="breadcrumbs-wrapper pt-50 pb-50 bg-primary-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div
+          class="breadcrumbs-style breadcrumbs-style-1 d-md-flex justify-content-between align-items-center"
+        >
+          <div class="breadcrumb-left">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Category
+              </li>
+            </ol>
+          </div>
+          <div class="breadcrumb-right">
+            <h5 class="heading-5 font-weight-500">Category</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="category-wrapper pt-50">
   <div class="container">
     <div class="row">
@@ -65,12 +88,12 @@
               data-toggle="collapse"
               href="#type"
               role="button"
-              aria-expanded="true"
+              aria-expanded="false"
             >
               Type
             </a>
           </div>
-          <div class="collapse show" id="type" style="">
+          <div class="collapse show" id="type">
             <div class="filter-type">
               <ul>
                 <li>
@@ -504,8 +527,8 @@
                           class="product-active slick-initialized slick-slider"
                         >
                           <span
-                            class="prev slick-arrow"
-                            aria-disabled="false"
+                            class="prev slick-arrow slick-disabled"
+                            aria-disabled="true"
                             style=""
                             ><i class="mdi mdi-chevron-left"></i
                           ></span>
@@ -515,14 +538,14 @@
                               style="
                                 opacity: 1;
                                 width: 588px;
-                                transform: translate3d(-294px, 0px, 0px);
+                                transform: translate3d(0px, 0px, 0px);
                               "
                             >
                               <div
-                                class="product-item active slick-slide"
+                                class="product-item active slick-slide slick-current slick-active"
                                 data-slick-index="0"
-                                aria-hidden="true"
-                                tabindex="-1"
+                                aria-hidden="false"
+                                tabindex="0"
                                 style="width: 294px"
                               >
                                 <img
@@ -531,10 +554,10 @@
                                 />
                               </div>
                               <div
-                                class="product-item slick-slide slick-current slick-active"
+                                class="product-item slick-slide"
                                 data-slick-index="1"
-                                aria-hidden="false"
-                                tabindex="0"
+                                aria-hidden="true"
+                                tabindex="-1"
                                 style="width: 294px"
                               >
                                 <img
@@ -546,9 +569,9 @@
                           </div>
 
                           <span
-                            class="next slick-arrow slick-disabled"
+                            class="next slick-arrow"
                             style=""
-                            aria-disabled="true"
+                            aria-disabled="false"
                             ><i class="mdi mdi-chevron-right"></i
                           ></span>
                         </div>

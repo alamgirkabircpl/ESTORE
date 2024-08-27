@@ -10,10 +10,10 @@
             <div class="navbar-top-left">
               <ul class="navbar-top-link">
                 <li><a routerLink="/about">About</a></li>
-                <li><a href="#0">Help</a></li>
-                <li><a href="#0">Contact</a></li>
+                <li><a routerLink="home">Help</a></li>
+                <li><a routerLink="contact">Contact</a></li>
                 <li class="d-none d-md-block">
-                  <a href="#0"
+                  <a routerLink="home"
                     ><i class="mdi mdi-phone-in-talk"></i> +8801234567890</a
                   >
                 </li>
@@ -45,7 +45,12 @@
                   </select>
                 </li>
                 <li>
-                  <a href="#0"><i class="mdi mdi-account"></i>Login</a>
+                  <a routerLink="signup"
+                    ><i class="mdi mdi-account"></i>Sign Up</a
+                  >
+                </li>
+                <li>
+                  <a routerLink="login"><i class="mdi mdi-account"></i>Login</a>
                 </li>
               </ul>
             </div>
@@ -63,7 +68,9 @@
           >
             <!-- desktop logo Start -->
             <div class="desktop-logo d-lg-block">
-              <a href="#0"><img src="assets/images/logo.svg" alt="Logo" /></a>
+              <a routerLink="home"
+                ><img src="assets/images/logo.svg" alt="Logo"
+              /></a>
             </div>
             <!-- desktop logo Ends -->
             <div class="navbar-menu-toggle d-lg-block">
@@ -77,14 +84,14 @@
             <div class="navbar-menu">
               <ul class="main-menu">
                 <div class="navbar-close d-lg-none text-right mb-3">
-                  <a href="#0" id="menu-close">
+                  <a routerLink="home" id="menu-close">
                     <i class="mdi mdi-close"></i>
                   </a>
                 </div>
 
                 <li class="position-static menu-item-has-children">
                   <a
-                    href="#0"
+                    routerLink="accessories"
                     class="collapsed"
                     data-toggle="collapse"
                     data-target="#menuVertical7-1"
@@ -111,19 +118,19 @@
                               <i class="mdi mdi-chevron-right"></i>
                             </h6>
                             <ul class="collapse" id="menuVertical7-2">
-                              <li><a href="category.html">Dressess</a></li>
-                              <li><a href="category.html">Jackets</a></li>
+                              <li><a routerLink="accessories">Dressess</a></li>
+                              <li><a routerLink="accessories">Jackets</a></li>
                               <li>
-                                <a href="category.html"
+                                <a routerLink="accessories"
                                   >Hoodies & Sweatshirts</a
                                 >
                               </li>
-                              <li><a href="category.html">Sweaters</a></li>
+                              <li><a routerLink="accessories">Sweaters</a></li>
                               <li>
-                                <a href="category.html">Tops & Tees</a>
+                                <a routerLink="accessories">Tops & Tees</a>
                               </li>
                               <li>
-                                <a href="category.html">Party Dressess</a>
+                                <a routerLink="accessories">Party Dressess</a>
                               </li>
                             </ul>
                           </li>
@@ -140,50 +147,43 @@
                               <i class="mdi mdi-chevron-right"></i>
                             </h6>
                             <ul class="collapse" id="menuVertical7-3">
-                              <li><a href="category.html">Dressess</a></li>
-                              <li><a href="category.html">Jackets</a></li>
+                              <li><a routerLink="accessories">Dressess</a></li>
+                              <li><a routerLink="accessories">Jackets</a></li>
                               <li>
-                                <a href="category.html"
+                                <a routerLink="accessories"
                                   >Hoodies & Sweatshirts</a
                                 >
                               </li>
-                              <li><a href="category.html">Sweaters</a></li>
+                              <li><a routerLink="accessories">Sweaters</a></li>
                               <li>
-                                <a href="category.html">Tops & Tees</a>
+                                <a routerLink="accessories">Tops & Tees</a>
                               </li>
                               <li>
-                                <a href="category.html">Party Dressess</a>
+                                <a routerLink="accessories">Party Dressess</a>
                               </li>
                             </ul>
                           </li>
                           <li class="mega-dropdown-list menu-item-has-children">
-                            <h6
-                              class="heading-6 font-weight-500 mega-title collapsed"
-                              data-toggle="collapse"
-                              data-target="#menuVertical7-4"
-                              aria-controls="menuVertical7-4"
-                              aria-expanded="false"
-                              aria-label="Toggle navigation"
-                            >
+                            <a routerLink="accessories">
                               Accessories
                               <i class="mdi mdi-chevron-right"></i>
-                            </h6>
+                            </a>
                             <ul class="collapse" id="menuVertical7-4">
                               <li>
-                                <a href="category.html"
+                                <a routerLink="accessories"
                                   >Hoodies & Sweatshirts</a
                                 >
                               </li>
                               <li>
-                                <a href="category.html">Jackets & Coats</a>
+                                <a routerLink="accessories">Jackets & Coats</a>
                               </li>
-                              <li><a href="category.html">Pants</a></li>
-                              <li><a href="category.html">Jeans</a></li>
+                              <li><a routerLink="accessories">Pants</a></li>
+                              <li><a routerLink="accessories">Jeans</a></li>
                               <li>
-                                <a href="category.html">Tops & Tees</a>
+                                <a routerLink="accessories">Tops & Tees</a>
                               </li>
                               <li>
-                                <a href="category.html">Casual Shorts</a>
+                                <a routerLink="accessories">Casual Shorts</a>
                               </li>
                             </ul>
                           </li>
@@ -196,12 +196,12 @@
                   </ul>
                   <!-- sub mega dropdown Ends -->
                 </li>
-                <li><a href="category.html">mens</a></li>
-                <li><a href="category.html">Kids</a></li>
-                <li><a href="category.html">Accessories</a></li>
+                <li><a routerLink="accessories">mens</a></li>
+                <li><a routerLink="accessories">Kids</a></li>
+                <li><a routerLink="accessories">Accessories</a></li>
                 <li class="menu-item-has-children">
                   <a
-                    href="#0"
+                    routerLink="home"
                     class="collapsed"
                     data-toggle="collapse"
                     data-target="#menuVertical7-5"
@@ -212,19 +212,17 @@
                   ></a>
                   <!-- sub menu Start -->
                   <ul class="sub-menu collapse" id="menuVertical7-5">
-                    <li><a href="about-page.html">About Page</a></li>
-                    <li><a href="account-page.html">Account Page</a></li>
-                    <li><a href="cart-page.html">Cart Page</a></li>
-                    <li><a href="category.html">Category Page</a></li>
-                    <li><a href="checkout-page.html">Checkout Page</a></li>
-                    <li><a href="contact-page.html">Contact Page</a></li>
-                    <li><a href="login-page.html">Log In Page</a></li>
+                    <li><a routerLink="about">About Page</a></li>
+                    <li><a routerLink="account">Account Page</a></li>
+                    <li><a routerLink="cart">Cart Page</a></li>
+                    <li><a routerLink="accessories">Category Page</a></li>
+                    <li><a routerLink="checkout">Checkout Page</a></li>
+                    <li><a routerLink="contact">Contact Page</a></li>
+                    <li><a routerLink="login">Log In Page</a></li>
                     <li>
-                      <a href="product-details-page.html"
-                        >Product Details Page</a
-                      >
+                      <a routerLink="product-details">Product Details Page</a>
                     </li>
-                    <li><a href="signup-page.html">Sign Up Page</a></li>
+                    <li><a routerLink="signup">Sign Up Page</a></li>
                   </ul>
                   <!-- sub menu Ends -->
                 </li>
@@ -256,7 +254,9 @@
               <!-- navbar search Ends -->
               <!-- navbar cart start -->
               <div class="navbar-cart">
-                <a class="icon-btn primary-icon-text icon-text-btn" href="#0"
+                <a
+                  class="icon-btn primary-icon-text icon-text-btn"
+                  routerLink="home"
                   ><img
                     src="assets/images/icon-svg/cart-1.svg"
                     alt="Icon"
@@ -283,13 +283,13 @@
                                 </div>
                                 <div class="product-content media-body">
                                   <h5 class="title">
-                                    <a href="#0">Hollow Port</a>
+                                    <a routerLink="home">Hollow Port</a>
                                   </h5>
                                   <ul>
                                     <li><span>Brown</span></li>
                                     <li><span>XL</span></li>
                                     <li>
-                                      <a class="delete" href="#0"
+                                      <a class="delete" routerLink="home"
                                         ><i class="mdi mdi-delete"></i
                                       ></a>
                                     </li>
@@ -323,13 +323,13 @@
                                 </div>
                                 <div class="product-content media-body">
                                   <h5 class="title">
-                                    <a href="#0">Mist Black Triblend</a>
+                                    <a routerLink="home">Mist Black Triblend</a>
                                   </h5>
                                   <ul>
                                     <li><span>Brown</span></li>
                                     <li><span>XL</span></li>
                                     <li>
-                                      <a class="delete" href="#0"
+                                      <a class="delete" routerLink="home"
                                         ><i class="mdi mdi-delete"></i
                                       ></a>
                                     </li>
@@ -363,13 +363,13 @@
                                 </div>
                                 <div class="product-content media-body">
                                   <h5 class="title">
-                                    <a href="#0">Realm Bone</a>
+                                    <a routerLink="home">Realm Bone</a>
                                   </h5>
                                   <ul>
                                     <li><span>Brown</span></li>
                                     <li><span>XL</span></li>
                                     <li>
-                                      <a class="delete" href="#0"
+                                      <a class="delete" routerLink="home"
                                         ><i class="mdi mdi-delete"></i
                                       ></a>
                                     </li>
@@ -403,13 +403,13 @@
                                 </div>
                                 <div class="product-content media-body">
                                   <h5 class="title">
-                                    <a href="#0">Circular Sienna</a>
+                                    <a routerLink="home">Circular Sienna</a>
                                   </h5>
                                   <ul>
                                     <li><span>Brown</span></li>
                                     <li><span>XL</span></li>
                                     <li>
-                                      <a class="delete" href="#0"
+                                      <a class="delete" routerLink="home"
                                         ><i class="mdi mdi-delete"></i
                                       ></a>
                                     </li>
@@ -444,10 +444,12 @@
                         <p class="price">$144</p>
                       </div>
                       <div class="checkout-btn">
-                        <a href="#0" class="main-btn primary-btn-border"
+                        <a routerLink="cart" class="main-btn primary-btn-border"
                           >View Cart</a
                         >
-                        <a href="#0" class="main-btn primary-btn">Checkout</a>
+                        <a routerLink="checkout" class="main-btn primary-btn"
+                          >Checkout</a
+                        >
                       </div>
                     </div>
                   </div>

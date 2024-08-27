@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracko.Server", "Tracko.Server\Tracko.Server.csproj", "{BAD9B884-DF3E-4A6F-A655-04824A0E3B34}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "tracko.client", "tracko.client\tracko.client.esproj", "{8E38CE38-2F05-41E0-95C1-BFAF061D7A10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAD9B884-DF3E-4A6F-A655-04824A0E3B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD9B884-DF3E-4A6F-A655-04824A0E3B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD9B884-DF3E-4A6F-A655-04824A0E3B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD9B884-DF3E-4A6F-A655-04824A0E3B34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E38CE38-2F05-41E0-95C1-BFAF061D7A10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E38CE38-2F05-41E0-95C1-BFAF061D7A10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E38CE38-2F05-41E0-95C1-BFAF061D7A10}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8E38CE38-2F05-41E0-95C1-BFAF061D7A10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E38CE38-2F05-41E0-95C1-BFAF061D7A10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E38CE38-2F05-41E0-95C1-BFAF061D7A10}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76FD1147-B9D6-4720-8AAC-FBEB367EE107}
+	EndGlobalSection
+EndGlobal

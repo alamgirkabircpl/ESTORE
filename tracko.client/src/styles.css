@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+/* General toast styling */
+.toast {
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Padding inside the toast */
+  font-size: 14px; /* Font size */
+  color: #fff; /* Text color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Success toast */
+.toast-success {
+  background-color: #28a745; /* Green background for success */
+  border: 1px solid #1e7e34; /* Darker green border */
+  height: 50px;
+  color: white;
+  align-items: center;
+  align-content: center;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+/* Error toast */
+.toast-error {
+  background-color: #dc3545; /* Red background for errors */
+  border: 1px solid #c82333; /* Darker red border */
+  height: 50px;
+  color: yellow;
+  align-items: center;
+  align-content: center;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+/* Info toast */
+.toast-info {
+  background-color: #17a2b8; /* Blue background for info */
+  border: 1px solid #117a8b; /* Darker blue border */
+}
+
+/* Warning toast */
+.toast-warning {
+  background-color: #ffc107; /* Yellow background for warnings */
+  border: 1px solid #e0a800; /* Darker yellow border */
+  height: 50px;
+  color: white;
+  align-items: center;
+  align-content: center;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+/* Positioning */
+.toast-top-right {
+  top: 12px; /* Distance from the top */
+  right: 12px; /* Distance from the right */
+}
+
+/* Progress bar styling */
+.toast-progress {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Background color of the progress bar */
+}
+
+/* Toast title */
+.toast-title {
+  font-weight: bold; /* Bold title */
+}
+
+/* Toast message */
+.toast-message {
+  font-size: 14px; /* Font size for the message */
+}

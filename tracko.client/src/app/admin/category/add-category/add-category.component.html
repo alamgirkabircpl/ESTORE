@@ -1,0 +1,70 @@
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-md-12">
+      <div class="card">
+        <div
+          class="card-header"
+          style="margin-bottom: 10px; background-color: navy; color: white"
+        >
+          <h3 class="card-title">Add New Category</h3>
+        </div>
+
+        <form [formGroup]="categoryForm" (ngSubmit)="onSubmit()">
+          <div class="row p-2">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="categoryName">Category Name</label>
+                <input
+                  type="text"
+                  id="categoryName"
+                  formControlName="categoryName"
+                  class="form-control"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="description">Description</label>
+                <textarea
+                  id="description"
+                  formControlName="description"
+                  class="form-control"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="image">Image</label>
+                <input
+                  type="file"
+                  id="image"
+                  (change)="onFileSelected($event)"
+                  class="form-control"
+                />
+              </div>
+
+              <!-- Image preview section -->
+              <div *ngIf="selectedImage">
+                <h5>Image Preview:</h5>
+                <img
+                  [src]="imagePreview"
+                  alt="Selected Image"
+                  class="img-thumbnail"
+                  style="max-width: 200px; max-height: 200px"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn btn-primary float-right" type="submit">
+              Save Category
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

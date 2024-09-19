@@ -1,3 +1,81 @@
+<!--<div class="mt-5">
+  <form
+    class="col s12 white"
+    #userRegistrationForm="ngForm"
+    (ngSubmit)="OnSubmit(userRegistrationForm)"
+  >
+    <div class="row">
+      <div class="input-field col s6">
+        <input
+          type="text"
+          name="UserName"
+          #UserName="ngModel"
+          [(ngModel)]="user.UserName"
+        />
+        <label>UserName</label>
+      </div>
+      <div class="input-field col s6">
+        <input
+          class="validate"
+          type="password"
+          name="Password"
+          #Password="ngModel"
+          [(ngModel)]="user.Password"
+        />
+        <label>Password</label>
+      </div>
+      <div class="input-field col s6">
+        <input
+          class="validate"
+          type="ConfirmPassword"
+          name="ConfirmPassword"
+          #ConfirmPassword="ngModel"
+          [(ngModel)]="user.ConfirmPassword"
+        />
+        <label>ConfirmPassword</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input
+          class="validate"
+          type="text"
+          name="Email"
+          #Email="ngModel"
+          [(ngModel)]="user.Email"
+        />
+        <label>Email</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input
+          type="text"
+          name="FirstName"
+          #FirstName="ngModel"
+          [(ngModel)]="user.FirstName"
+        />
+        <label>FirstName</label>
+      </div>
+      <div class="input-field col s6">
+        <input
+          type="text"
+          name="LastName"
+          #LastName="ngModel"
+          [(ngModel)]="user.LastName"
+        />
+        <label>LastName</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <button class="btn-large btn-submit" type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>-->
+
 <section class="breadcrumbs-wrapper pt-50 pb-50 bg-primary-4">
   <div class="container">
     <div class="row">
@@ -30,36 +108,76 @@
             Create an Account with
           </h1>
           <div class="login-registration-form pt-10">
-            <form action="#" class="has-validation-callback">
+            <form
+              #userRegistrationForm="ngForm"
+              (ngSubmit)="OnSubmit(userRegistrationForm)"
+              class="has-validation-callback"
+            >
               <div class="single-form form-default form-border text-left">
                 <label>Full Name</label>
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-input">
-                      <input type="text" placeholder="First Name" />
+                      <input
+                        type="text"
+                        name="FirstName"
+                        #FirstName="ngModel"
+                        [(ngModel)]="user.FirstName"
+                        placeholder="First Name"
+                      />
                       <i class="mdi mdi-account"></i>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-input form">
-                      <input type="text" placeholder="Last Name" />
+                      <input
+                        type="text"
+                        name="LastName"
+                        #LastName="ngModel"
+                        [(ngModel)]="user.LastName"
+                        placeholder="Last Name"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
+
+              <div class="single-form form-default form-border text-left">
+                <label>User Name</label>
+                <div class="form-input">
+                  <input
+                    name="UserName"
+                    #UserName="ngModel"
+                    [(ngModel)]="user.UserName"
+                    placeholder="User Name"
+                  />
+                  <i class="mdi mdi-account"></i>
+                </div>
+              </div>
+
               <div class="single-form form-default form-border text-left">
                 <label>Email Address</label>
                 <div class="form-input">
-                  <input type="email" placeholder="user@email.com" />
+                  <input
+                    type="email"
+                    name="Email"
+                    #Email="ngModel"
+                    [(ngModel)]="user.Email"
+                    placeholder="user@email.com"
+                  />
                   <i class="mdi mdi-email"></i>
                 </div>
               </div>
+
               <div class="single-form form-default form-border text-left">
                 <label>Choose Password</label>
                 <div class="form-input">
                   <input
                     id="password-3"
                     type="password"
+                    name="Password"
+                    #Password="ngModel"
+                    [(ngModel)]="user.Password"
                     placeholder="Password"
                   />
                   <i class="mdi mdi-lock"></i>
@@ -69,6 +187,26 @@
                   ></span>
                 </div>
               </div>
+
+              <div class="single-form form-default form-border text-left">
+                <label>Confirm Password</label>
+                <div class="form-input">
+                  <input
+                    id="password-3"
+                    type="password"
+                    name="ConfirmPassword"
+                    #ConfirmPassword="ngModel"
+                    [(ngModel)]="user.ConfirmPassword"
+                    placeholder="Confirm Password"
+                  />
+                  <i class="mdi mdi-lock"></i>
+                  <span
+                    toggle="#password-3"
+                    class="mdi mdi-eye-outline toggle-password"
+                  ></span>
+                </div>
+              </div>
+
               <div class="single-checkbox checkbox-style-3">
                 <input type="checkbox" id="login-3" />
                 <label for="login-3"><span></span> </label>

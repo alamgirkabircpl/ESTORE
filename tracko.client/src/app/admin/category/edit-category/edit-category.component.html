@@ -1,0 +1,57 @@
+<div class="container">
+  <h2>Edit Category</h2>
+  <form [formGroup]="categoryForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="categoryName">Category Name</label>
+      <input
+        type="text"
+        id="categoryName"
+        formControlName="categoryName"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea
+        id="description"
+        formControlName="description"
+        class="form-control"
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="image">Image</label>
+      <input
+        type="file"
+        id="image"
+        (change)="onFileSelected($event)"
+        class="form-control"
+      />
+    </div>
+
+    <!-- Display the existing image if present -->
+    <div *ngIf="imageUrl && !selectedImage" class="form-group">
+      <label>Current Image:</label>
+      <img
+        [src]="imageUrl"
+        alt="Category Image"
+        class="img-thumbnail"
+        style="max-width: 200px; max-height: 200px"
+      />
+    </div>
+
+    <!-- Display the new image if selected -->
+    <div *ngIf="selectedImage" class="form-group">
+      <label>New Image Preview:</label>
+      <img
+        [src]="imagePreview"
+        alt="New Image Preview"
+        class="img-thumbnail"
+        style="max-width: 200px; max-height: 200px"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update Category</button>
+  </form>
+</div>

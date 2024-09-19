@@ -1,0 +1,71 @@
+<div class="">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <!-- general form elements -->
+
+        <div class="card">
+          <div class="row p-2" *ngIf="category">
+            <div class="col-md-12">
+              <div class="row">
+                <!-- Category Name -->
+                <div class="col-md-12 mb-3">
+                  <div class="row">
+                    <div class="col-md-2 col-sm-12">
+                      <label class="control-label">Category Name :</label>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <h3>{{ category.categoryName }}</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Description -->
+                <div class="col-md-12 mb-3">
+                  <div class="row">
+                    <div class="col-md-2 col-sm-12">
+                      <label class="control-label">Description:</label>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <h3>{{ category.description }}</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Image -->
+                <div class="col-md-12 mb-3">
+                  <div class="row">
+                    <div class="col-md-2 col-sm-12">
+                      <label class="control-label">Image :</label>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <img
+                        *ngIf="category.imageUrl"
+                        [src]="category.imageUrl"
+                        alt="Category Image"
+                        style="width: 100px; height: auto"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <a class="btn btn-outline-info" (click)="goBack()">Back</a>
+            <button
+              class="float-right btn btn-sm btn-primary"
+              style="color: white"
+              type="submit"
+            >
+              <i class="fas fa-save"></i> Save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /.content -->
+  </div>
+</div>

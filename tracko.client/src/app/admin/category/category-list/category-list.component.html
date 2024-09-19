@@ -1,0 +1,109 @@
+<div class="">
+  <section class="content pt-3">
+    <div class="">
+      <div class="row">
+        <div class="col-12">
+          <div class="card card-outline card-tabs">
+            <div
+              class="card-header"
+              style="margin-bottom: 30px; background-color: navy; color: white"
+            >
+              <h3 class="card-title">Category</h3>
+              <a
+                class="float-right btn btn-sm btn-primary"
+                style="color: white"
+                routerLink="/admin-dashboard/add-category"
+              >
+                <i class="fa fa-plus"></i>
+                Add
+              </a>
+            </div>
+            <div class="card-body">
+              <div *ngIf="isLoading">Loading...</div>
+              <div *ngIf="!isLoading && categories.length === 0">
+                No categories available.
+              </div>
+              <table
+                *ngIf="!isLoading && categories.length > 0"
+                class="table table-sm table-bordered table-hover"
+                id="data-table"
+              >
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Category Name</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let category of categories; let i = index">
+                    <td>{{ i + 1 }}</td>
+                    <td>{{ category.categoryName }}</td>
+                    <td>{{ category.description }}</td>
+                    <td>
+                      <img
+                        *ngIf="category.imageUrl"
+                        [src]="category.imageUrl"
+                        alt="{{ category.categoryName }}"
+                        style="width: auto; height: 30px"
+                        class="img-responsive img-thumbnail"
+                      />
+                    </td>
+                    <td>
+                      <a
+                        class="btn btn-sm btn-success text-white mr-1"
+                        [routerLink]="[
+                          '/admin-dashboard/edit-category',
+                          category.uuid
+                        ]"
+                      >
+                        <i class="fas fa-edit">Edit</i></a
+                      >
+
+                      <a
+                        class="btn btn-sm btn-primary text-white mr-1"
+                        [routerLink]="[
+                          '/admin-dashboard/category-details',
+                          category.uuid
+                        ]"
+                      >
+                        <i class="fas fa-eye">View</i></a
+                      >
+
+                      <a
+                        (click)="deleteCategory(category.uuid)"
+                        class="btn btn-sm btn-danger text-white"
+                      >
+                        <i class="fas fa-trash">Delete</i></a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- <table
+                  class="table table-sm table-bordered table-hover"
+                  id="data-table"
+                >
+                  <thead>
+                    <tr>
+                      <th class="text-center">Name</th>
+  
+                      <th class="text-center">Action</th>
+                    </tr>
+                  </thead>
+  
+                  <tbody></tbody>
+                </table> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
